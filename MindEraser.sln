@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindEraser", "MindEraser\MindEraser.csproj", "{0C145A13-A474-47BE-A0F1-5368DCFE3D92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindEraser.Models", "MindEraser.Models\MindEraser.Models.csproj", "{AE84C568-A372-4309-AF59-DCA86B911E54}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MindEraser.Database", "MindEraser.Database\MindEraser.Database.sqlproj", "{446C2A0B-AED2-48BD-AF5C-2BA856D9D061}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C145A13-A474-47BE-A0F1-5368DCFE3D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C145A13-A474-47BE-A0F1-5368DCFE3D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C145A13-A474-47BE-A0F1-5368DCFE3D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C145A13-A474-47BE-A0F1-5368DCFE3D92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE84C568-A372-4309-AF59-DCA86B911E54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE84C568-A372-4309-AF59-DCA86B911E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE84C568-A372-4309-AF59-DCA86B911E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE84C568-A372-4309-AF59-DCA86B911E54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{446C2A0B-AED2-48BD-AF5C-2BA856D9D061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{446C2A0B-AED2-48BD-AF5C-2BA856D9D061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{446C2A0B-AED2-48BD-AF5C-2BA856D9D061}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{446C2A0B-AED2-48BD-AF5C-2BA856D9D061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{446C2A0B-AED2-48BD-AF5C-2BA856D9D061}.Release|Any CPU.Build.0 = Release|Any CPU
+		{446C2A0B-AED2-48BD-AF5C-2BA856D9D061}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ECEFA85F-4200-4E99-9BD9-11A31149642B}
+	EndGlobalSection
+EndGlobal
