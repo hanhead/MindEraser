@@ -31,3 +31,10 @@ textarea {
 .bodycontainer {
     min-height:600px;
 }
+
+.white-blurred-edge {
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px #EB9597 inset;
+}
