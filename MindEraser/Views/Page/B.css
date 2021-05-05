@@ -1,0 +1,63 @@
+﻿@font-face {
+    font-family: "Frankfurter";
+    src: url("./asserts/font/Frankfurter\ Std\ Regular.otf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+body {
+    background-color: #eb9597;
+    font-family: "Frankfurter";
+}
+
+.eraser {
+    margin: 3% 3%;
+    display: block;
+}
+
+.signIn {
+    font-family: "Frankfurter";
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 30px;
+    margin-left: 92%;
+    margin-top: -2%;
+    display: block;
+}
+
+.button {
+    border: 7px solid;
+    font-family: "Frankfurter";
+    line-height: 35px;
+    display: flex;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+    outline: none;
+    width: 70%;
+    background-color: #eb9597;
+    border-radius: 20px;
+    border: 7px solid;
+    margin-top: 37%;
+    margin-left: 17%;
+    box-shadow: 0 9px #ba6d6f;
+    padding-top: 0.5%;
+}
+
+    .button:active {
+        background-color: #eb9597;
+        box-shadow: 0 5px #ba6d6f;
+        transform: translateY(4px);
+    }
+
+.vector {
+    float: right;
+    display: flex;
+}

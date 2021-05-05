@@ -254,6 +254,10 @@
     <Content Include="Views\Page\B.cshtml" />
     <Content Include="Views\Page\C.cshtml" />
     <Content Include="Views\Page\D.cshtml" />
+    <Content Include="Views\Page\A.css" />
+    <Content Include="Views\Page\B.css" />
+    <Content Include="Views\Page\C.css" />
+    <Content Include="Views\Page\D.css" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -304,6 +308,11 @@
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
