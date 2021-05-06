@@ -1,6 +1,11 @@
-﻿@font-face {
+﻿
+@{
+    ViewBag.Title = "A";
+}
+<style>
+    @@font-face {
     font-family: "Frankfurter";
-    src: url("./asserts/font/Frankfurter\ Std\ Regular.otf");
+    src: url("../fonts/Regular.otf");
     font-style: normal;
     font-weight: 100;
 }
@@ -67,3 +72,33 @@ h1 {
     cursor: pointer;
     display: block;
 }
+</style>
+    <div class="outline" col-lg-3></div>
+
+    <div class="inside">
+
+        <div>
+            <h1>MINDERASER</h1>
+        </div>
+
+        <div class="main">
+            <p>
+                Hello there! I know today was
+                <br>a hectic day…but there will be
+                <br>brighter days in the future!
+                <br>
+                <br>
+                You can simply type out your mind.
+                <br>
+                Let out everything on your mind here.
+                <br>
+                <br>
+                Leave with a cleared mind,
+                <br>
+                free from your negative thoughts.
+            </p>
+        </div>
+        <button class="btn" onclick="myFunction()">ERASE YOUR NEGATIVE MIND!</button>
+    </div>
+    @*<script src="index.js"></script>*@
+

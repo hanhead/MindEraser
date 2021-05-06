@@ -2,33 +2,78 @@
 @{
     ViewBag.Title = "B";
 }
-
-<h2>B (Tutorial) - Byung Moon</h2>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles2.css">
-</head>
-<body>
-    <div class="eraser">
-        <img src="asserts/img/Logo2.png">
-        <button class="signIn">SIGN IN</button>
-    </div>
+<style>
+    @@font-face {
+    font-family: "Frankfurter";
+    src: url("../fonts/Regular.otf");
+    font-style: normal;
+    font-weight: 100;
+}
 
 
-    <div class="user">
+body {
+    background-color: #eb9597;
+    font-family: "Frankfurter";
+}
 
-    </div>
+.eraser {
+    margin: 3% 3%;
+    display: block;
+}
 
-    <div>
-        <input type="text" class="button" placeholder="YOU CAN LET GO YOUR NEGATIVE MIND HERE!">
-        <img class="vector" src="asserts/img/Vector.png">
-    </div>
+.signIn {
+    font-family: "Frankfurter";
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 30px;
+    margin-left: 92%;
+    margin-top: -2%;
+    display: block;
+}
 
-</body>
-</html>
+.button {
+    border: 7px solid;
+    font-family: "Frankfurter";
+    line-height: 35px;
+    display: flex;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+    outline: none;
+    width: 70%;
+    background-color: #eb9597;
+    border-radius: 20px;
+    border: 7px solid;
+    margin-top: 37%;
+    margin-left: 17%;
+    box-shadow: 0 9px #ba6d6f;
+    padding-top: 0.5%;
+}
+
+    .button:active {
+        background-color: #eb9597;
+        box-shadow: 0 5px #ba6d6f;
+        transform: translateY(4px);
+    }
+
+.vector {
+    float: right;
+    display: flex;
+}
+
+</style>
+
+<div class="user">
+
+</div>
+
+<div>
+    <input type="text" class="button" placeholder="YOU CAN LET GO YOUR NEGATIVE MIND HERE!">
+    <img class="vector" src="../images/Vector.png">
+</div>

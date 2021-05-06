@@ -255,10 +255,6 @@
     <Content Include="Views\Page\B.cshtml" />
     <Content Include="Views\Page\C.cshtml" />
     <Content Include="Views\Page\D.cshtml" />
-    <Content Include="Views\Page\A.css" />
-    <Content Include="Views\Page\B.css" />
-    <Content Include="Views\Page\C.css" />
-    <Content Include="Views\Page\D.css" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
