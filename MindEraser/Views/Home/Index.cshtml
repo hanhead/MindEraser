@@ -1,7 +1,53 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
+<style>
+    div.floatingtext {
+        position: absolute;
+        width:150px;
+        text-align:center;
+    }
+</style>
 <div>
     <h1 class="text-center white-blurred-edge" style="display:inline-block">Mind Eraser</h1>
 </div>
+<div id="eraserboard" style="position:relative;min-height:500px;overflow:hidden;">
+    <div class='floatingtext white-blurred-edge'>돈 걱정</div>
+    <div class='floatingtext white-blurred-edge'>건강 걱정</div>
+    <div class='floatingtext white-blurred-edge'>재해 걱정</div>
+</div>
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            animateDiv();
+        });
+
+        function makeNewPosition() {
+            var h = $('#eraserboard').height() - 20;
+            var w = $('#eraserboard').width() - 20;
+
+            var nh = Math.floor(Math.random() * h);
+            var nw = Math.floor(Math.random() * w);
+
+            return [nh, nw];
+        }
+
+        function animateDiv() {
+            $('.floatingtext').each(function (index, obj) {
+                var newq = makeNewPosition();
+                $(obj).css({ top: newq[0], left: newq[1] });
+                newq = makeNewPosition();
+                $(obj).animate({ top: newq[0], left: newq[1] }, 10000, 'swing', function () {
+                    animateEachDiv(this);
+                });
+            });
+        };
+        function animateEachDiv(each) {
+            var newq = makeNewPosition();
+            $(each).animate({ top: newq[0], left: newq[1] }, 10000, 'swing', function () {
+                animateEachDiv(this);
+            });
+        }
+
+    </script>
+}
