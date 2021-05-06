@@ -1,13 +1,7 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<style>
-    div.floatingtext {
-        position: absolute;
-        width:150px;
-        text-align:center;
-    }
-</style>
+
 <div>
     <h1 class="text-center white-blurred-edge" style="display:inline-block">Mind Eraser</h1>
 </div>
@@ -25,12 +19,32 @@
     <div class='floatingtext white-blurred-edge'>건강 걱정</div>
     <div class='floatingtext white-blurred-edge'>사고 걱정</div>
 </div>
+<input type="text" id="newtext" />
+<button type="button" onclick="generatenewtext();">new text</button>
+<style>
+    div.floatingtext {
+        position: absolute;
+        width: 150px;
+        text-align: center;
+    }
+</style>
 @section scripts{
     <script>
         $(document).ready(function () {
             animateDiv();
         });
-
+        var generatenewtext = function () {
+            var newfloatingtext = $('#newtext').val();
+            var $newtag = $('<div class="floatingtext white-blurred-edge"></div>');
+            $newtag.text(newfloatingtext);
+            $newtag.appendTo($('#eraserboard'));
+            var newq = makeNewPosition();
+            $newtag.css({ top: newq[0], left: newq[1] });
+            newq = makeNewPosition();
+            $newtag.animate({ top: newq[0], left: newq[1] }, 10000, 'swing', function () {
+                animateEachDiv(this);
+            });
+        };
         function makeNewPosition() {
             var h = $('#eraserboard').height() - 20;
             var w = $('#eraserboard').width() - 20;
